@@ -1,24 +1,25 @@
 <?php
+    if (isset($_POST["cidadeOrigem"]) && isset($_POST["cidadeDestino"]) && isset($_POST["distancia"]) && isset($_POST["pedagio"])){
 
-if ($_POST["cidadeOrigem"] != "" && $_POST["cidadeDestino"] != "" && $_POST["distancia"] != "" && $_POST["pedagio"] != ""){
-    $cidadeOrigem = $_POST["cidadeOrigem"];
-    $cidadeDestino = $_POST["cidadeDestino"];
-    $distancia = $_POST["distancia"];
-    $pedagio = $_POST["pedagio"];
-
-    $valorTotal = (9.40 * $pedagio) + (6 * $distancia);
-
-    echo "A viagem de <span>$cidadeOrigem</span> à <span>$cidadeDestino</span> irá custar o valor total de R$ <span>$valorTotal</span>";
-
-} else{
-    echo "Preencha os campos corretamente";
-}
-
+        $cidadeOrigem = $_POST["cidadeOrigem"];
+        $cidadeDestino = $_POST["cidadeDestino"];
+        $distancia = $_POST["distancia"];
+        $pedagio = $_POST["pedagio"];
+        
+        $valorTotal = (9.40 * $pedagio) + (6 * $distancia);
+    
+    } else{
+        echo "VOCÊ NÃO ENVIOU OS DADOS";
+        exit;
+    }
 ?>
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 
 <head>
     <meta charset="UTF-8">
@@ -29,26 +30,39 @@ if ($_POST["cidadeOrigem"] != "" && $_POST["cidadeDestino"] != "" && $_POST["dis
     <title>PHL | Cálculo do Frete</title>
 </head>
 
+<body>
+    <p class="resultado">A viagem de <span><?= $cidadeOrigem ?></span> à <span><?= $cidadeDestino ?></span> irá custar o total de R$<em><?= number_format($valorTotal,2, ",", ".")?></em> </p>
+</body>
+
 </html>
+
+
+
+
 
 <style>
     body{
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-image: url(img/background.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-blend-mode: darken;
-        background-color: rgba(0, 0, 0, 0.600);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 35px;
         color: white;
     }
-    span{
+    .resultado{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .resultado > span{
+        font-size: 30px;
+        font-style: normal;
         font-weight: bold;
-        font-size: 45px;
-        padding-left: 10px; padding-right: 10px; 
+        padding-left: 8px; padding-right: 8px;
+    }
+    .resultado > em{
+        font-size: 50px;
+        font-style: normal;
+        font-weight: bold;
+        padding-left: 8px; padding-right: 8px;
     }
 </style>
