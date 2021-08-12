@@ -16,27 +16,27 @@
 
     <h1>SENELETRO</h1>
 
-    <form action="consumo.php" method="POST">
+    <form action="conta.php" method="POST">
         <div class="consumo">
             <p class="subtitulo">Consumo:</p>
             <label for="consumo">Consumo em Quilowatts-hora:</label>
-            <input type="text" id="consumo" name="consumo">
+            <input type="text" id="consumo" name="consumo" required>
         </div>
         <div class="nome">
             <p class="subtitulo">Nome e Sobrenome:</p>
             <label for="primeiroNome">Nome:</label>
-            <input type="text" name="primeiroNome" id="primeiroNome">
+            <input type="text" name="primeiroNome" id="primeiroNome" required>
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome">
+            <input type="text" name="sobrenome" id="sobrenome" required>
         </div>
         <div class="endereco">
             <p class="subtitulo">Endereço:</p>
             <label for="rua">Rua:</label>
-            <input type="text" name="rua" id="rua">
+            <input type="text" name="rua" id="rua" required>
             <label for="numeroCasa">N°</label>
-            <input type="text" name="numeroCasa" id="numeroCasa">
+            <input type="text" name="numeroCasa" id="numeroCasa" required>
         </div>
-        <button type="submit">ENVIAR</button>
+        <button type="submit">GERAR CONTA DE LUZ</button>
     </form>
     
 </body>
