@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconeCaminhao.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>PHL | Calcular Frete</title>
+</head>
+
+
+<body>
+
+    <h1 id="titulo">PHL LOGÍSTICA</h1>
+
+    <form action="frete.php" method="POST">
+        <div class="cidades">
+            <label for="cidadeOrigem">Cidade Origem:</label>
+            <input type="text" id="cidadeOrigem" name="cidadeOrigem">
+            <label for="cidadeDestino">Cidade Destino:</label>
+            <input type="text" id="cidadeDestino" name="cidadeDestino">
+        </div>
+
+        <div class="info">
+            <div class="distancia">
+                <label for="distancia">Distânia entre as cidades (Km):</label>
+                <input type="text" name="distancia" id="distancia">
+            </div>
+
+            <div class="pedagio">
+                <label for="pedagio">Quantidade de Pedágios</label>
+                <input type="text" name="pedagio" id="pedagio">
+            </div>
+
+            <button type="submit">CALCULAR</button>
+        </div>
+    </form>
+
+</body>
+
+
+</html>
