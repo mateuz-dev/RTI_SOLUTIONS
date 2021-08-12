@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,149,1) 38%, rgba(14,76,108,1) 100%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: none;
+    color: white;
+}
+
+form div{
+    width: 100%;
+}
+
+form button{
+    margin-top: 35px;
+    padding: 7px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    transition: .5s;
+}
+form button:hover{
+    background-color: white;
+    color: black;
+}
+
+.nome input, .salario input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    width: 100%;
+    color: white;
+    outline: none;
+}
+
+.cargo select{
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#cargo option{
+    background: transparent;
+    color: black;
+}
+
+#masculino, #feminino, #naoInformar{
+    display: flex;
+    align-items: center;
+}
+
+.nome, .salario, .genero, .cargo{
+    margin-top: 35px;
+}
+.generos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

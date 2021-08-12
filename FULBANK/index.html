@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconeBanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>FULBANK</title>
+</head>
+
+<body>
+    <form action="POST" autocomplete="off">
+
+        <div class="nome">
+            <label for="nome">NOME:</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="salario">
+            <label for="salario">SALÁRIO:</label>
+            <input type="text" name="salario" id="salario" required>
+        </div>
+
+        <div class="genero">
+            <label for="genero">GÊNERO:</label>
+
+            <div class="generos">
+                <div id="masculino">
+                    <input type="radio" name="Masculino" id="Masculino">
+                    <p>Masculino</p>
+                </div>
+    
+                <div id="feminino">
+                    <input type="radio" name="Feminino" id="Feminino">
+                    <p>Feminino</p>
+                </div>
+    
+                <div id="naoInformar">
+                    <input type="radio" name="Não informar" id="Não informar">
+                    <p>Não informar</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cargo">
+            <label for="cargo">CARGO:</label>
+            <select name="cargo" id="cargo" required>
+                <option value="estagiario">Estagiário</option>
+                <option value="caixa">Caixa</option>
+                <option value="atendenteComercial">Atendente comercial</option>
+                <option value="agenteComercial">Agente comercial</option>
+                <option value="assistenteDeGerencia">Assistente da gerência</option>
+                <option value="gerente">Gerente</option>
+            </select>
+        </div>
+
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+
+</html>
