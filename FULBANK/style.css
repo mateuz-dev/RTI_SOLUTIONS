@@ -12,8 +12,8 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,149,1) 38%, rgba(14,76,108,1) 100%);
+    background-color: white;
+   
 }
 
 form{
@@ -26,6 +26,8 @@ form{
     border-radius: 7px;
     background: none;
     color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,149,1) 38%, rgba(14,76,108,1) 100%);
 }
 
 form div{

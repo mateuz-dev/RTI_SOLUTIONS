@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="POST" autocomplete="off">
+    <form action="aumento.php" method="POST" autocomplete="off">
 
         <div class="nome">
             <label for="nome">NOME:</label>
@@ -28,17 +28,17 @@
 
             <div class="generos">
                 <div id="masculino">
-                    <input type="radio" name="Masculino" id="Masculino">
+                    <input type="radio" name="genero" value="Masculino">
                     <p>Masculino</p>
                 </div>
     
                 <div id="feminino">
-                    <input type="radio" name="Feminino" id="Feminino">
+                    <input type="radio" name="genero" value="Feminino">
                     <p>Feminino</p>
                 </div>
     
                 <div id="naoInformar">
-                    <input type="radio" name="Não informar" id="Não informar">
+                    <input type="radio" name="genero" value="Não informar">
                     <p>Não informar</p>
                 </div>
             </div>
@@ -48,12 +48,12 @@
         <div class="cargo">
             <label for="cargo">CARGO:</label>
             <select name="cargo" id="cargo" required>
-                <option value="estagiario">Estagiário</option>
-                <option value="caixa">Caixa</option>
-                <option value="atendenteComercial">Atendente comercial</option>
-                <option value="agenteComercial">Agente comercial</option>
-                <option value="assistenteDeGerencia">Assistente da gerência</option>
-                <option value="gerente">Gerente</option>
+                <option value="Estagiário">Estagiário</option>
+                <option value="Caixa">Caixa</option>
+                <option value="Atendente Comercial">Atendente comercial</option>
+                <option value="Agente Comercial">Agente comercial</option>
+                <option value="Assistente de Gerência">Assistente da gerência</option>
+                <option value="Gerente">Gerente</option>
             </select>
         </div>
 
