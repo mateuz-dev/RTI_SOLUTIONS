@@ -58,6 +58,8 @@ form button:hover{
     width: 100%;
     color: white;
     outline: none;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .cargo select{
@@ -67,7 +69,8 @@ form button:hover{
     outline: none;
     font-size: 14px;
     font-weight: lighter;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px solid white;
 }
 #cargo option{
     background: transparent;
@@ -86,4 +89,7 @@ form button:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+.generos input{
+    margin-right: 5px;
 }

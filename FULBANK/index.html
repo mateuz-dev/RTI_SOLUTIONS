@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/iconeBanco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/iconePC.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>FULBANK</title>
 </head>
@@ -20,7 +20,7 @@
 
         <div class="salario">
             <label for="salario">SALÁRIO:</label>
-            <input type="text" name="salario" id="salario" required>
+            <input type="text" name="salario" id="salario" placeholder="R$" required>
         </div>
 
         <div class="genero">
@@ -28,18 +28,18 @@
 
             <div class="generos">
                 <div id="masculino">
-                    <input type="radio" name="genero" value="Masculino">
-                    <p>Masculino</p>
+                    <input type="radio" name="genero" value="Masculino" id="inputM">
+                    <label for="inputM">Masculino</label>
                 </div>
     
                 <div id="feminino">
-                    <input type="radio" name="genero" value="Feminino">
-                    <p>Feminino</p>
+                    <input type="radio" name="genero" value="Feminino" id="inputF">
+                    <label for="inputF">Feminino</label>
                 </div>
     
                 <div id="naoInformar">
-                    <input type="radio" name="genero" value="Não informar">
-                    <p>Não informar</p>
+                    <input type="radio" name="genero" value="naoInformar" id="inputNI">
+                    <label for="inputNI">Não informar</label>
                 </div>
             </div>
 
@@ -48,12 +48,19 @@
         <div class="cargo">
             <label for="cargo">CARGO:</label>
             <select name="cargo" id="cargo" required>
-                <option value="Estagiário">Estagiário</option>
-                <option value="Caixa">Caixa</option>
-                <option value="Atendente Comercial">Atendente comercial</option>
-                <option value="Agente Comercial">Agente comercial</option>
-                <option value="Assistente de Gerência">Assistente da gerência</option>
-                <option value="Gerente">Gerente</option>
+                <option>Gerente de Projetos</option>
+                <option>Desenvolvedor Back-End</option>
+                <option>Desenvolvedor Front-End</option>
+                <option>DevOps</option>
+                <option>Designer UX/UI</option>
+                <option>QA</option>
+                <option>Gerente de Produtos</option>
+                <option>Engenheiro de Software</option>
+                <option>Arqiteto de Software</option>
+                <option>DBA</option>
+                <option>Analista de Sistemas</option>
+                <option>Gerente de Produto</option>
+                <option>Gerente de Produto</option>
             </select>
         </div>
 

@@ -7,17 +7,21 @@ if (isset($_POST["nome"]) && isset($_POST["salario"]) && isset($_POST["genero"])
     $genero = $_POST["genero"];
     $cargo = $_POST["cargo"];
 
-    $aumento = 0;
-
     if ($salario > 5000){
-        $aumento = $salario / 10;
-        $salario = $salario + $aumento;
+        $salarioNovo = $salario * 1.1;
     } else{
-        $aumento = $salario / 20;
-        $salario = $salario + $aumento;
+        $salarioNovo = $salario * 1.2;
     }
 
-    $mensagem = "<span>$nome</span> passará a receber <em>R$ $salario</em>, no cargo de <span>$cargo</span>";
+    if ($genero === "Masculino"){
+        $fraseInicio = "O ";
+    } elseif ($genero === "Feminino"){
+        $fraseInicio = "A ";
+    } else{
+        $fraseInicio = "";
+    }
+
+    $mensagem = "$fraseInicio <span>$nome</span> passará a receber <em>R$ $salarioNovo</em>, no cargo de <span>$cargo</span>";
 
 } else{
     $mensagem = "AS INFORMAÇÕES NÃO FORAM ENVIADAS CORRETAMENTE";
@@ -36,7 +40,7 @@ if (isset($_POST["nome"]) && isset($_POST["salario"]) && isset($_POST["genero"])
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/iconeBanco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/iconePC.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>FULBANK</title>
 </head>
@@ -70,8 +74,9 @@ if (isset($_POST["nome"]) && isset($_POST["salario"]) && isset($_POST["genero"])
         margin-right: 7px;
     }
     em{
-        font-size: 50px;
+        font-size: 60px;
         margin-left: 8px;
         margin-right: 8px;
+        font-style: normal;
     }
 </style>
